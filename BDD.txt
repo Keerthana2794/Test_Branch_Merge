@@ -1,0 +1,105 @@
+Cucumber is a testing tool that supports Behavior Driven Development (BDD)  
+framework. It defines application behavior using simple English text,  
+defined by a language called Gherkin.
+
+Cucumber allows automation functional validation that is easily read and  
+understood. Cucumber was initially implemented in Ruby and then extended to  
+Java framework. Both the tools support native JUnit.
+
+In order to get better advantage of the software testing, organizations are  
+nowadays taking a step forward. They implement important acceptance test  
+scenarios while development is in-progress. This approach is commonly known  
+as Behavior Driven Development (BDD).
+
+
+Behavior Driven Development gives us an opportunity to create test scripts  
+from both the developer’s and the customer’s prospective as well. So in the  
+beginning, developers, project managers, QAs, user acceptance testers and  
+the product owner (stockholder), all get together and brainstorm about which  
+test scenarios should be passed in order to call this software/application  
+successful. This way they come up with a set of test scenarios. All these  
+test scripts are in simple English language, so it serves the purpose of  
+documentation also.
+
+Cucumber supports over a dozen different software platforms like -
+
+Ruby on Rails
+Selenium
+PicoContainer
+Spring Framework
+Watir
+
+Gherkin supports not only English but many other native languages such as  
+French, Finnish, Indonesian, Hungarian, Hindi, Urdu, Gujarati, etc.
+Example
+Feature - Login functionality for a social networking site.
+The user should be able to login into the social networking site if the username and the password are correct.
+The user should be shown the error message if the username and the password are incorrect.
+The user should be navigated to home page, if the username and password are correct.
+Feature Files
+The file, in which Cucumber tests are written, is known as feature files. It is advisable that there should be a separate feature file, for each feature under test. The extension of the feature file needs to be “.feature”.
+One can create as many feature files as needed. To have an organized structure, each feature should have one feature file.
+For Example -
+Sr.No	Feature	Feature File name
+1	User Login	userLogin.feature
+2	Share the Post	sharePost.feature
+3	Create Account	createAccount.feature
+4	Delete Account	deleteAccount.feature
+The naming convention to be used for feature name, feature file name depends on the individual’s choice. There is no ground rule in Cucumber about names.
+A simple feature file consists of the following keywords/parts -
+•	Feature - Name of the feature under test.
+•	Description (optional) - Describe about feature under test.
+•	Scenario - What is the test scenario.
+•	Given - Prerequisite before the test steps get executed.
+•	When - Specific condition which should match in order to execute the next step.
+•	Then - What should happen if the condition mentioned in WHEN is satisfied.
+
+-------------------------------------------------------------------
+Scenario:Addition
+Given a running calculator
+When I add 17 and 42
+Then should the calculator display 59
+
+
+Scenario:Add an item in the shopping bag
+Given I have selected a red-shirt
+When I add the t-shirt to the shopping bag
+Then should the shopping bag contain a red t-shirt
+
+
+Feature:Subscribe for our e-mail marketing service
+
+In order to be able to receive important marketing messages
+As marketing message receiver 
+I should be able to register my e-mail address
+
+Scenario:Subscribe with a valid e-mail address
+Given I want to subscribe to receive important market information
+When I enter a valid address sanjay.degaonkar@capgemini.com
+Then should I get a welcome message
+
+Scenario:Try to subscribe with an invalid e-mail address
+Given I want to subscribe to receive important market information
+When I enter a invalid address sanjay.degaonkar@capgemini.com
+Then should I get an error message
+
+-------------------------------------------------------------------
+Scenario:Subscribe with a valid e-mail address
+Given I open my browser to www.example.com/subscribe
+When I type sanjay@capgemini.com in the textarea
+and press the send button
+Then should I be forwarded to a page with the title subscription result
+and see welcome sanjay@capgemini.com in the div message.-----------------wrong
+
+more technical - textarea ...
+
+an avg user doesn't know what  is textarea
+
+more suitable :
+Scenario:Subscribe with a valid e-mail address
+Given I want to subscribe to receive important market information
+When I enter a valid address sanjay.degaonkar@capgemini.com
+Then should I get a welcome message
+
+BDD can help us build the right thing
+Creates confidence that the system behaves as our customer want it to behave--------------------
