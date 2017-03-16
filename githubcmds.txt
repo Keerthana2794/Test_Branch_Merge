@@ -1,0 +1,11 @@
+GITHUB
+
+git init
+git pull URL
+git add BankApplication
+git commit -m "Bank App"
+git push <<URL>> master
+and enter github userid n pwd
+
+
+
